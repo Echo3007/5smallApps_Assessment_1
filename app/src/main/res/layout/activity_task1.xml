@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task1"
+    android:background="@drawable/task1background"
+    >
+
+    <Button
+        android:id="@+id/topLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Left"
+        android:layout_gravity="top|left"
+        android:backgroundTint="@color/blue_dark"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/topRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Right"
+        android:layout_gravity="top|right"
+        android:backgroundTint="@color/blue_dark"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <ImageButton
+        android:id="@+id/centerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:onClick="onButtonClicked"
+        android:padding="0dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pic2"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/bottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Left"
+        android:layout_gravity="bottom|left"
+        android:backgroundTint="@color/amber"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/bottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Right"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@color/amber"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="130dp"
+        android:background="@color/transparent_mine"
+        android:drawableTop="@drawable/baseline_home_24"
+        android:text="Home"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:ignore="TouchTargetSizeCheck"
+        android:onClick="go_back_main"
+        />
+
+
+</FrameLayout>

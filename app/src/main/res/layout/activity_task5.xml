@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task5">
+
+    <EditText
+        android:id="@+id/screen_task5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chain operations calculator"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="bottom|right"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/btn_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/screen_task5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+            />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+            />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+
+            />
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="onClick"
+            style="@style/MyOperationButton"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_line1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+            />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+            />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+
+            />
+        <Button
+            android:id="@+id/btn_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="onClick"
+            style="@style/MyOperationButton"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_line2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+
+            />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="onClick"
+            style="@style/MyNumbersButton"
+            />
+        <Button
+            android:id="@+id/btn_mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyOperationButton"
+            android:text="X"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/MyNumbersButton"
+        android:text="0"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="@id/btn_line3"
+        app:layout_constraintTop_toBottomOf="@id/btn_line3"
+        app:layout_constraintEnd_toStartOf="@id/btn_dec"
+        />
+
+    <Button
+        android:id="@+id/btn_dec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/MyDelButton"
+        android:textColor="@color/black"
+        android:text="."
+        android:onClick="onClick"
+        app:layout_constraintEnd_toStartOf="@id/btn_div"
+        app:layout_constraintTop_toBottomOf="@id/btn_line3"
+        />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintTop_toBottomOf="@id/btn_0"
+        app:layout_constraintStart_toStartOf="@id/btn_0"
+        app:layout_constraintEnd_toStartOf="@id/btn_result"
+        android:onClick="onClick"
+        style="@style/MyDelButton"
+        />
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="@id/btn_line3"
+        app:layout_constraintTop_toBottomOf="@id/btn_line3"
+        style="@style/MyOperationButton"
+        />
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        app:layout_constraintTop_toBottomOf="@id/btn_div"
+        app:layout_constraintEnd_toEndOf="@id/btn_line3"
+        android:onClick="onClick"
+        style="@style/MyOperationButton"
+
+        />
+    <TextView
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/transparent_mine"
+        android:drawableTop="@drawable/baseline_home_24"
+        android:onClick="go_back_main"
+        android:text="Home"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

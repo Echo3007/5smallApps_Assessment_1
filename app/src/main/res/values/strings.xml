@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Assessment_1</string>
+    <string-array name="items_list">
+        <item>Task 1: Button Interactions</item>
+        <item>Task 2: Spinner and Radio Buttons</item>
+        <item>Task 3: Catalogue Application</item>
+        <item>Task 4: Login Screen</item>
+        <item>Task 5: Calculator with chain of operations</item>
+    </string-array>
+
+
+    <string name="task2_second_title">Scroll right (or left) and click on a flag to find out more!</string>
+    <string name="original_flag">In 1978 the artist Gilbert Baker, openly gay man and drag queen, designed the first rainbow flag.
+        \nLater on, Baker revealed that he was being urged by one of the first openly gay elected officials in the U.S., Harvey Milk, to create a symbol for the gay community.
+        \nBaker opted for a flag, as he saw potential for a powerful symbol of pride, a way of proclaiming visibility.
+        \n
+        \nHe saw the rainbow as a natural flag from the sky, adopting eight colours for the stripes, each of them with its own meaning:
+        \n- pink (sexuality),\n- red (life),\n- orange (healing),\n- yellow (sunlight),\n- green (nature),
+        \n- turquoise (art),\n- indigo (harmony),\n- violet (spirit).
+        \n
+         \nThe first versions of the flag were flown on June 25,1978,for the San Francisco Day Parade,
+         which commemorated the one-year anniversary of the Stonewall riots and celebrated LGBTQ+ pride.
+</string>
+
+    <string name="rainbow_flag">The Six-Striped flag is based on the 1978 Gilbert Baker’s design.
+\nBaker and a team of volunteers had made by hand the flags with the original design to be flown at the San Francisco Gay Freedom Day Parade on the 25th of June 1978.
+\n
+        \nThe first design consisted of eight colours (pink, red, orange, yellow, green, turquoise, indigo and violet), and now Baker wanted to mass-produce the flag to be available to all.
+\n
+        \nDue to production issues, however, the pink and turquoise stripes were removed, and indigo was replaced by blue.
+\nThis resulted in the contemporary six-striped flag (red, orange, yellow, green, blue and violet), which is the most common variant of the rainbow flag, with the red stripe on top.
+The colours came to reflect the diversity and the unity of the LGBTQ+ Community.
+\n
+\nHowever, it was not until 1994 that the rainbow flag was truly established as the symbol for the LGBTQ+ Pride, and today it is its international symbol, that can be seen flying proudly during promising times, as well as the difficult ones.
+</string>
+    <string name="philly">In 2017, Philadelphia took a bold step towards the LGBTQ+ representation with the introduction of the “Philly Pride Flag”: this adds two new stripes (brown and black) to the top of the rainbow.
+\nWhy were those colours added?
+\nIn 2016, after a number of stories exposing racism in Philadelphia’s Gayborhood, people started demanding more inclusion and intersectionality in the Philadelphia’s LGBTQ+ Community.
+\n
+        \nIcon Ebony-Fierce, a Philadelphia drag and burlesque performer, event manager, and community activist, recalls how communities of colour organized. \n“It was a collective effort of a lot of people in the community, including performers, that decided to make sure our voices get heard.”
+\nThe new flag was meant to recognize the legacy of that activism, and anchor inclusion as an essential part of Philadelphia’s Pride.
+</string>
+
+    <string name="intersex">Developed in 2018 by non-binary artist and designer Daniel Quasar, the design celebrates the diversity of the LGBTQ+ Community and calls for a more inclusive society.
+\nIt is a reinterpretation of multiple changes of the pride flag. Today, the pride number of flags is considerable and represents all the identities that fall under the umbrella of the LGBTQ Community.
+        \n
+        \nHowever, some subgroups are more visible than others, and the recent pride flag redesign have aimed to increase the representation of discriminated minority identities within the community.
+\nIn 2017, Philadelphia City Hall in the US revealed a pride flag that included the black and brown stripes, to highlight the discrimination of the black and brown community.
+\n
+        \nA year later, the US city Seattle added five new colours to the rainbow flag: black and brown to represent people of colour, and pink, light blue and white to represent the trans, gender-non binary, intersex and all those across the gender spectrum.
+\n
+        \nThis design was however criticised, as stacking the colours linked to identity on top of the original colours assigned to values confuses and weakens the community’s message.
+Quasar resolved the issue by placing the black, brown, light blue, pink and white stripes in the shape of an arrow, on the left of the Progress Pride flag. This solution was an immediate success.
+\n
+        \nIn 2021, Valentino Vecchietti adapted the Pride Progress Flag design to incorporate the intersex flag, represented by a yellow background and a purple circle, which is the one in the picture below.
+</string>
+
+    <string name="username_error">Username must be at least 4 characters</string>
+    <string name="password_error">Password must be at least 4 characters</string>
+</resources>

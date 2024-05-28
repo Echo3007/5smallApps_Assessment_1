@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Task3_PhiladelphiaFlag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_philly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Philadelphia Pride Flag (2017)"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/coral"/>
+
+            <ImageView
+                android:id="@+id/philly_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/philly_2" />
+
+            <TextView
+                android:id="@+id/philly_descr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:inputType="textMultiLine"
+                android:maxLines="40"
+                android:minLines="4"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/philly"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/go_previous_philly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="go_previous"
+                    android:text="Go Back"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/coral"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <Button
+                    android:id="@+id/go_back_philly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="go_back_main"
+                    android:text="Go Main"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/coral"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/go_next3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="go_next"
+                    android:text="Go Next"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/coral"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task4"
+    android:background="@drawable/background_task4">
+
+    <TextView
+        android:id="@+id/title_task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        />
+    <TextView
+        android:id="@+id/title2_task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter \nyour username and password"
+        app:layout_constraintTop_toBottomOf="@id/title_task4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/indigo"
+        />
+
+    <ImageView
+        android:id="@+id/imageTask4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title2_task4"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo_task4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_task4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageTask4"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        style="@style/floatingMessage"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_task4_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Username"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_task4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/username_task4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_task4_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:background="@color/white"
+
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/attempts_task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/password_task4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/attempts_task4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/loginbtn_task4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginEnd="30dp"
+            android:textSize="20sp"
+            android:onClick="login_task4"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:backgroundTint="#303F9F"/>
+
+        <Button
+            android:id="@+id/clearbtn_task4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginEnd="30dp"
+            android:textSize="20sp"
+            android:onClick="clear_task4"
+            android:backgroundTint="#303F9F"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/transparent_mine"
+        android:drawableTop="@drawable/baseline_home_24"
+        android:onClick="go_back_main"
+        android:text="Home"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
